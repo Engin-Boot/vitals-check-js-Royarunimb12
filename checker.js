@@ -7,7 +7,7 @@ function vitalsAreOk(bpm, spo2, respRate) {
     else if(spo2 < 90) {
         return false;
     } 
-    else if !(30<=respRate<=95) {
+    else if !(30 <= respRate <=95) {
         return false;
     }
     return true;
