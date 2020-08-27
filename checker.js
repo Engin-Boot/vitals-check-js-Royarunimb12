@@ -1,4 +1,7 @@
 const expect = require('chai').expect;
+var BPMinRange=require("./Conditions.js").BPMinRange;
+var SPO2inRange=require("./Conditions.js").SPO2inRange;
+var respRateinRange=require("./Conditions.js").respRateinRange;
 
 function vitalsAreOk(bpm, spo2, respRate) {
   
@@ -8,27 +11,13 @@ function vitalsAreOk(bpm, spo2, respRate) {
     else if(SPO2inRange(spo2))
     {return false;
     }
-    else if(resprateinRange(respRate))
+    else if(respRateinRange(respRate))
     {return false;
     }
     return true;
 }
         
-function BPMinRange(bpm){
-        if(!(70 <= bpm <= 150))
-            return false;
-        return true;
-    }
-function SPO2inRange(spo2){
-    if(spo2<90)
-        return false;
-    return true;
-}
-function respRateinRange(respRate){
-    if(!(30 <= respRate <=95))
-        return false;
-    return true;
-}
+
     
     
         
