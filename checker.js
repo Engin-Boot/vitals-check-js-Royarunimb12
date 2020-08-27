@@ -1,20 +1,11 @@
 const expect = require('chai').expect;
-var BPMinRange=require("./Conditions.js").BPMinRange;
-var SPO2inRange=require("./Conditions.js").SPO2inRange;
-var respRateinRange=require("./Conditions.js").respRateinRange;
+var checkall=require("./Conditions.js").checkall;
 
 function vitalsAreOk(bpm, spo2, respRate) {
-  
-    if(BPMinRange(bpm))
-    {return false;
-    }
-    else if(SPO2inRange(spo2))
-    {return false;
-    }
-    else if(respRateinRange(respRate))
-    {return false;
-    }
+  if(checkall(bpm,spo2,respRate))
     return true;
+  return false;
+    
 }
         
 
