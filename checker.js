@@ -2,9 +2,7 @@ const expect = require('chai').expect;
 var checkall=require("./Conditions.js").checkall;
 
 function vitalsAreOk(bpm, spo2, respRate) {
-  if(checkall(bpm,spo2,respRate))
-    return true;
-  return false;
+  return checkall(bpm,spo2,respRate);
     
 }
        
