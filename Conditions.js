@@ -1,7 +1,6 @@
 function checkall(bpm, spo2, respRate){
         return (BPMinRange(bpm) && SPO2inRange(spo2) && respRateinRange(respRate));
                
-        }
 }
         
 function BPMinRange(bpm){
