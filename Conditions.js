@@ -23,9 +23,6 @@ function respRateinRange(respRate){
 }
 
 module.exports={
-BPMinRange:BPMinRange,
-SPO2inRange:SPO2inRange,
-respRateinRange:respRateinRange,
 checkall:checkall
 };
 
