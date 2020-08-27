@@ -1,5 +1,5 @@
 function BPMinRange(bpm){
-        if(!(70 <= bpm <= 150))
+        if(bpm<70 || bpm>150)
         {return false;}
         return true;
     }
@@ -11,7 +11,7 @@ function SPO2inRange(spo2){
 }
 
 function respRateinRange(respRate){
-    if(!(30 <= respRate <=95))
+    if(respRate<30 || respRate > 95)
     {return false;}
     return true;
 }
