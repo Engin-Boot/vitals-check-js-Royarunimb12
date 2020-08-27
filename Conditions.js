@@ -3,6 +3,7 @@ function checkall(bpm, spo2, respRate){
                 return true;
          return false;
         }
+}
         
 function BPMinRange(bpm){
         if(bpm<70 || bpm>150)
@@ -23,6 +24,9 @@ function respRateinRange(respRate){
 }
 
 module.exports={
-checkall:checkall
+        BPMinRange:BPMinRange,
+        SPO2inRange:SPO2inRange,
+        respRateinRange:respRateinRange,
+        checkall:checkall
 };
 
